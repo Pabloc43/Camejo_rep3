@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.cabeza {
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.cabeza-jumbo {
+  height: 500px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cabeza-jumbo .cabeza-jumbo h1 {
+  font-size: 60px;
+}
+
+.cabeza-jumbo p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.cabeza-jumbo a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 15px;
+  background: #a18cd1;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.svg-hero {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.svg-hero img {
+  margin-left: 20%;
+}
+
+.contenedor,
+.wave-contenedor {
+  width: 90%;
+  max-width: 1000px;
+  overflow: hidden;
+  margin: auto;
+  padding: 0 0 80px 0;
+}
+
+.titulo {
+  font-weight: 300;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.website {
+  display: flex;
+  justify-content: space-between;
+}
+
+.website img {
+  width: 48%;
+}
+
+.website .contenedor-textos-main {
+  width: 40%;
+}
+
+.parrafo {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.cta {
+  display: inline-block;
+  text-decoration: none;
+  background-image: linear-gradient(
+    45deg,
+    #ff9a9e 0%,
+    #fad0c4 99%,
+    #fad0c4 100%
+  );
+  padding: 12px 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.content-cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%;
+  text-align: center;
+  height: 300px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+  transform: scale(1);
+  transition: transform 0.6s;
+}
+
+.card:hover {
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.card i {
+  margin: 30px 0 20px 0;
+  color: #cc9199;
+  font-size: 50px;
+}
+
+.card p {
+  font-weight: 300;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/* galeria */
+.container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(5, 10, 5, 0.8), rgba(90, 40, 90, 0.8)),
+    url(../mouli.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  width: 80%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 130px;
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2em;
+}
+
+.navbar ul li::before {
+  content: "";
+  height: 3px;
+  width: 0;
+  background-color: rgb(145, 196, 45);
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before {
+  width: 100%;
+}
