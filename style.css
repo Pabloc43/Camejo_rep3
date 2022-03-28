@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(5, 10, 5, 0.8), rgba(90, 40, 90, 0.8)),
+    url(../mouli.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  width: 80%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+  cursor: pointer;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Rubik", sams-serif;
+  font-size: 1.2em;
+}
+
+.navbar ul li::before {
+  content: "";
+  height: 3px;
+  width: 0;
+  background-color: rgb(222, 33, 240);
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  transition: 0.4s ease-in-out;
+}
+
+.navbar ul li:hover::before {
+  width: 100%;
+}
+
+.jumbotop-div {
+  height: 500px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5vh;
+}
+
+.jumbotop-div h1 {
+  margin-top: 10vh;
+  font-size: 60px;
+}
+
+.jumbotop-div p {
+  font-size: 25px;
+}
+
+.jumbotop-div a {
+  max-height: 55px;
+  width: 25vh;
+  height: 20vh;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 15px;
+  background: #55a362;
+  border-radius: 8px;
+  color: #fff;
+  margin-top: -10vh;
+  text-align: center;
+  font-size: 21px;
+}
+
+.jumbotop-div a:hover {
+  background: rgb(93, 118, 99);
+  transition: all 0.2s ease-in;
+  transform: scale(1.5);
+}
+
+.jumbotop {
+  margin-top: 10%;
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+
+.jumbotop-div img {
+  margin-top: -15vh;
+  width: 60vw;
+}
+
+.contenedor,
+.wave-contenedor {
+  width: 90%;
+  max-width: 1000px;
+  overflow: hidden;
+  margin: auto;
+  padding: 0 0 80px 0;
+}
+
+.titulo {
+  font-weight: 300;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cta {
+  display: inline-block;
+  text-decoration: none;
+  background-image: linear-gradient(
+    45deg,
+    #ff9a9e 0%,
+    #fad0c4 99%,
+    #fad0c4 100%
+  );
+  padding: 12px 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.card {
+  width: 30%;
+  text-align: center;
+  height: 300px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+  transform: scale(1);
+  transition: transform 0.6s;
+  background-color: #bdbecf;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.card i {
+  margin: 30px 0 20px 0;
+  color: #cc9199;
+  font-size: 50px;
+}
+
+.card p {
+  font-weight: 300;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.content-cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.instituto-about {
+  background-image: url(./Fondo-about.jpg);
+  position: relative;
+  width: 100vw;
+  min-height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  padding: 20px;
+}
+
+.instituto-about h2 {
+  color: #fad0c4;
+  font-size: 30px;
+  margin-bottom: 10vh;
+  margin-top: 5vh;
+}
+
+.instituto-about p {
+  font-size: 20px;
+  color: #16193f;
+  font-weight: 700;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.cursos {
+  position: relative;
+}
+
+.formul {
+  position: relative;
+}
+
+.contacto {
+  position: relative;
+}
+
+footer {
+  width: 100vw;
+  position: relative;
+  height: 20vh;
+  background-color: rgb(46, 35, 99);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-inicio a {
+  color: rgb(186, 122, 216);
+  position: relative;
+  font-size: 100px;
+  margin-left: 80vw;
+}
+
+.scroll-inicio a i:hover {
+  text-shadow: 0px 4px 4px rgba(137, 96, 159, 0.7);
+  transition: all 0.25s ease;
+}
+
+.formul {
+  position: relative;
+}
+
+.cursos {
+  margin: auto;
+  width: 95vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cursos img {
+  min-width: 300px;
+  max-width: 20vw;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.cursos img:hover {
+  transform: scale(1.2);
+  box-shadow: 0px -1px 44px 15px rgba(113, 93, 145, 0.65);
+  -webkit-box-shadow: 0px -1px 44px 15px rgba(113, 93, 145, 0.65);
+  -moz-box-shadow: 0px -1px 44px 15px rgba(113, 93, 145, 0.65);
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+form {
+  margin-top: 20vh;
+  display: flex;
+  background-color: #55a362;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60vh;
+  background: rgba(36, 187, 56, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+form input {
+  margin-top: 5px;
+}
+
+form h2 {
+  color: rgb(238, 227, 227);
+  font-size: 30px;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+}
+
+form input,
+textarea {
+  width: 35vw;
+  margin-bottom: 10px;
+  padding: 0.8vh;
+  box-sizing: border-box;
+  font-size: 15px;
+  border: 0.3vh solid rgb(57, 146, 49);
+  border-radius: 2px;
+}
+
+form input:hover,
+textarea:hover {
+  box-shadow: 0px -1px 18px 9px rgba(138, 179, 141, 0.66);
+  -webkit-box-shadow: 0px -1px 18px 9px rgba(138, 179, 141, 0.66);
+  -moz-box-shadow: 0px -1px 18px 9px rgba(138, 179, 141, 0.66);
+  transition: all 0.2s ease;
+}
+
+form textarea {
+  min-height: 10vh;
+  max-height: 22vh;
+  max-width: 50vw;
+  min-width: 35vw;
+}
+
+#Submittt {
+  width: 35vw;
+  background: #fb8701;
+  opacity: 0.8;
+  color: #fff;
+  font-size: 20px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+}
+
+#Submittt:hover {
+  cursor: pointer;
+  background: #bb5c02;
+  font-weight: 600;
+  box-shadow: none;
+  opacity: 1;
+}
+/* Franco */
+.opiniones {
+  margin: auto;
+  position: relative;
+  width: 80vw;
+  height: 80vh;
+  background-color:#e7ac52;
+  opacity: 0.5;
+}
+
+.opiniones div { 
+  justify-content: space-between;
+  display:flex;
+  flex-direction: column;
+  margin: 20px 0;
+  font: size 35px;
+}
+.opiniones div h1 { 
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.opiniones div class="opiniones"{
+  margin:20px 0;
+  font: size 35px;
+}
