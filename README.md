@@ -1,6 +1,6 @@
 # Camejo_rep3
 
-##Proyecto 
+## Proyecto 
 
 Este proyecto se basa en la practica de flexbox, usando las tecnologias de css y html.
 Consta de 1html (index), 1css y una carpeta images
